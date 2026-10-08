@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aya Hany — AI Developer, Data Analyst and Software Developer portfolio." />
+  <title>Aya Hany — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="nav">
+    <a class="logo" href="#home">AYA<span>.</span></a>
+    <nav class="desktop-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" aria-label="Open menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="#home" onclick="toggleMenu()">Home</a>
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#projects" onclick="toggleMenu()">Projects</a>
+    <a href="#skills" onclick="toggleMenu()">Skills</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+  </div>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        <div class="status"><i></i> Open to learning opportunities</div>
+        <p class="eyebrow">AI DEVELOPER • DATA ANALYST • SOFTWARE DEVELOPER</p>
+        <h1>Turning ideas into<br><em>intelligent</em><br>solutions.</h1>
+        <p class="hero-text">
+          Computer Science student at the Egyptian Chinese University building practical skills
+          in AI, data analytics, software development, and embedded systems through hands-on projects.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">Explore My Work <span>↗</span></a>
+          <a class="btn ghost" href="#contact">Let's Connect</a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <div class="photo-glow"></div>
+        <img src="assets/profile.jpg" alt="Aya Hany" class="hero-photo" />
+      </div>
+      <div class="scroll-cue">SCROLL <span>↓</span></div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-label">01 — ABOUT</div>
+      <div class="section-grid">
+        <div>
+          <h2>A curious mind<br>building with <em>purpose.</em></h2>
+        </div>
+        <div>
+          <p>
+            I'm Aya Hany, a Computer Science student at the Egyptian Chinese University with a strong
+            interest in Artificial Intelligence, Data Analytics, and Software Development.
+          </p>
+          <p>
+            I enjoy turning ideas into working projects — from AI-powered applications and dashboards
+            to C++ software and digital hardware systems.
+          </p>
+          <div class="mini-facts">
+            <div><strong>2029</strong><span>Expected Graduation</span></div>
+            <div><strong>2.92</strong><span>GPA / 4.00</span></div>
+            <div><strong>AI + Data</strong><span>Current Focus</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="section-label">02 — SELECTED WORK</div>
+      <div class="section-head">
+        <h2>Things I've<br><em>built.</em></h2>
+        <p>A selection of academic, software, AI, hardware and data projects.</p>
+      </div>
+
+      <article class="project featured">
+        <div class="project-copy">
+          <span class="project-number">01</span>
+          <h3>Pharmaceutical Sales Dashboard</h3>
+          <p>
+            An interactive Power BI dashboard for pharmaceutical sales analysis, covering executive
+            KPIs, sales trends, products, customers, distributors, channels, cities and sales teams.
+          </p>
+          <div class="tags"><span>Power BI</span><span>Data Visualization</span><span>Sales Analytics</span></div>
+        </div>
+        <div class="dashboard-main">
+          <img src="assets/dashboard-overview.jpg" alt="Pharmaceutical Sales Dashboard overview">
+        </div>
+      </article>
+
+      <div class="dashboard-gallery">
+        <figure><img src="assets/dashboard-analysis.jpg" alt="Power BI sales analysis"><figcaption>Sales Analysis</figcaption></figure>
+        <figure><img src="assets/dashboard-team.jpg" alt="Power BI sales team"><figcaption>Sales Team</figcaption></figure>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card">
+          <span>02</span><h3>Hospital Management System with AI</h3>
+          <p>AI-powered hospital system using C++ and Python with REST APIs, JSON, patient triage and AI-generated summaries.</p>
+          <div class="tags"><span>C++</span><span>Python</span><span>REST API</span><span>AI</span></div>
+        </article>
+        <article class="project-card">
+          <span>03</span><h3>AI Live Stream Provider</h3>
+          <p>AI-powered platform concept for live meetings and online collaboration with intelligent real-time assistance.</p>
+          <div class="tags"><span>AI</span><span>Real-time</span><span>Hackathon</span></div>
+        </article>
+        <article class="project-card">
+          <span>04</span><h3>Restaurant Management System</h3>
+          <p>Complete C++ restaurant system with billing, order management, coupons and percentage-based discounts.</p>
+          <div class="tags"><span>C++</span><span>OOP</span><span>Team Project</span></div>
+        </article>
+        <article class="project-card">
+          <span>05</span><h3>Remote Controlled Power Outlets</h3>
+          <p>Smart outlet system built with ESP32 and Arduino, including hardware implementation and testing.</p>
+          <div class="tags"><span>ESP32</span><span>Arduino</span><span>Hardware</span></div>
+        </article>
+        <article class="project-card">
+          <span>06</span><h3>4-to-1 Multiplexer</h3>
+          <p>Designed, simulated and implemented a complete multiplexer circuit with Logic Works, Arduino UNO and Tinkercad.</p>
+          <div class="tags"><span>Logic Works</span><span>Arduino</span><span>Digital Logic</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="section-label">03 — SKILLS</div>
+      <div class="section-grid">
+        <div><h2>Tools I<br><em>work with.</em></h2></div>
+        <div class="skill-groups">
+          <div><span>PROGRAMMING</span><p>C++ · Python · HTML</p></div>
+          <div><span>AI & DATA</span><p>Artificial Intelligence · Data Analytics · REST APIs · JSON · AI API Integration</p></div>
+          <div><span>SOFTWARE</span><p>OOP · GUI Development · Visual Studio · Debugging · Version Control</p></div>
+          <div><span>EMBEDDED</span><p>Arduino UNO · ESP32 · Logic Works · Tinkercad · Circuit Design · Digital Logic</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-label">04 — CONTACT</div>
+      <div class="contact-box">
+        <p class="eyebrow">LET'S BUILD SOMETHING</p>
+        <h2>Have an idea?<br><em>Let's talk.</em></h2>
+        <a class="email" href="mailto:hangaya33@gmail.com">hangaya33@gmail.com ↗</a>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/aya-hany-9876a0414/" target="_blank">LinkedIn</a>
+          <span>•</span><span>Cairo, Egypt</span><span>•</span><span>+20 112 817 6341</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>AYA<span class="cyan">.</span></span><span>© 2026 Aya Hany</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
